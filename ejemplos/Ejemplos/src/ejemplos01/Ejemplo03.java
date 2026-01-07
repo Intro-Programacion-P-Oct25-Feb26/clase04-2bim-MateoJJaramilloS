@@ -17,6 +17,8 @@ public class Ejemplo03 {
                                          // obtenerSuma
         System.out.printf("El valor de la suma es: %d\n", valor);
         
+        System.out.printf(suma);
+        // La línea 18 da error porque no se puede traer la variable suma así porque sí, lo correcto sería usar la variable valor por que ya tiene llamada una función
         // System.out.printf("El valor de la suma es: %d\n", obtenerSuma(10, 30));
     }
     
