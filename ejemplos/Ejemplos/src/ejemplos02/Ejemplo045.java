@@ -17,6 +17,7 @@ public class Ejemplo045 {
         int[][] arreglo1 = {{1, 2, 3}, {3, 2, 4}, {2, 6, 2}};
         int[][] arreglo2 = {{1, 2, 3}, {2, 2, 2}, {3, 1, 2}};
         int[][] arreglo3 = llenarMatriz(arreglo1, arreglo2);
+        int[][] arreglo4 = llenarMatriz2(arreglo1, arreglo2);
         //new int[3][3];
 
         obtenerReporte(arreglo1);
@@ -52,4 +53,24 @@ public class Ejemplo045 {
         }
         return z;
     }
+    
+    public static int obtenerPotencia(int a, int b) {
+        int operacion;
+        int a1 = a;
+        int b2 = b;
+        operacion = Math.pow(a1,b2);
+        return operacion;
+        }
+    
+    public static int [][] llenarMatriz2(int[][] x, int[][] y) {
+
+        int[][] z = new int[3][3];
+        for (int i = 0; i < x.length; i++) {
+            for (int j = 0; j < x[i].length; j++) {
+                z[i][j] = obtenerMultiplicacion(x[i][j], y[i][j]);
+            }
+        }
+        return z;
+
+    
 }
